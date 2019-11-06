@@ -1,5 +1,6 @@
 class GasStation
-
+  attr_accessor :brand, :unleaded_price
+  
   # Remember which methods this "magic command", "attr_reader" creates.
   # It writes "get" for these two instance variables.
   # https://www.rubyguides.com/2018/11/attr_accessor/
