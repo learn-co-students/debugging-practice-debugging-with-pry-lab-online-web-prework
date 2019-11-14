@@ -1,4 +1,4 @@
-
+require "pry"
 def turtles
     [
       {name: "Donatello", weapon: "bo-staff", traits: ["serious", "leader"]},
@@ -9,9 +9,9 @@ def turtles
 end
 
 def turtle_traits(turtles)
-  turtles.map do |turtle|
-    turtle[:traits].each do |trait|
-      trait
+  turtles.each do |turtle|
+    turtle[:traits].each do |traits|
+p trait
     end
   end
 end
