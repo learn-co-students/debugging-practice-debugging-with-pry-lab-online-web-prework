@@ -1,3 +1,5 @@
+require 'pry'
+
 class Person
   attr_accessor :name, :candy_lover
 
@@ -8,6 +10,7 @@ class Person
 
   def tall?
     true
+      binding.pry
   end
 
   def basketball_player?
@@ -26,4 +29,6 @@ class Person
         "not a ballin candy lover"
     end
   end
+  
+
 end
