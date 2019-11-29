@@ -7,6 +7,7 @@ class Person
   end
 
   def tall?
+  
     true
   end
 
