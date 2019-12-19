@@ -1,29 +1,34 @@
-class Person
-  attr_accessor :name, :candy_lover
+require'pry'
 
-  def initialize(name, candy_lover)
-    @name = name
-    @candy_lover = candy_lover
-  end
+
+class Person
+       attr_accessor :name, :candy_lover
+
+       #binding.pry
+  def initialize(name,candy_lover)
+          @name = name
+          @candy_lover = candy_lover
+  end     
 
   def tall?
-    true
+        true
   end
 
   def basketball_player?
-    false
+          false
   end
 
   def likes_candy?
-    true
+        true
   end
 
   def ballin_candy_lover?
     if @candy_lover == true
       "Aw sweet, this cat loves them some candy!"
-    else
-      10.times do
-        "not a ballin candy lover"
-    end
-  end
+         else
+          10.times do
+              "not a ballin candy lover"
+        end
+     end
+   end
 end
